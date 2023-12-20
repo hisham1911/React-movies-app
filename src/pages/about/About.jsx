@@ -6,24 +6,24 @@ function About() {
         <div className='h-100 text-white'>
             <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
 
-            <section class="section services-section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="section-title">
+            <section className="section services-section" id="services">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6">
+                            <div className="section-title">
                                 <h2>What I Do</h2>
                                 <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div className="row">
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-desktop"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-desktop"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Unique design</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>
@@ -31,12 +31,12 @@ function About() {
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-user"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-user"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Different Layout</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>
@@ -44,12 +44,12 @@ function About() {
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-comment"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-comment"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Make it Simple</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>
@@ -57,12 +57,12 @@ function About() {
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-image"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-image"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Responsiveness</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>
@@ -70,12 +70,12 @@ function About() {
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-th"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-th"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Testing for Perfection</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>
@@ -83,12 +83,12 @@ function About() {
                         </div>
 
 
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="feature-box-1">
-                                <div class="icon">
-                                    <i class="fa fa-cog"></i>
+                        <div className="col-sm-6 col-lg-4">
+                            <div className="feature-box-1">
+                                <div className="icon">
+                                    <i className="fa fa-cog"></i>
                                 </div>
-                                <div class="feature-content">
+                                <div className="feature-content">
                                     <h5>Advanced Options</h5>
                                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                                 </div>

@@ -37,9 +37,9 @@ function NavBar() {
             },
         })
             .then((res) => {
-                // console.log("API Response: For the fucking Search ", res.data);
+                console.log("API Response: For the fucking Search ", res.data);
                 setSearchResults(res.data)
-                // console.log(searchResults);
+                console.log(searchResults);
             })
             .catch((err) => {
                 console.error("API Error Mother Fucker:", err);
