@@ -43,7 +43,7 @@ function Footer() {
       >
         © 2020 Copyright:
         <a className="text-white ms-2" href="#">
-          ITI.com
+          Fady Shenoda &copy;
         </a>
       </div>
     </footer>

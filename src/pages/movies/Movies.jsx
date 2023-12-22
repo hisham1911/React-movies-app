@@ -55,14 +55,13 @@ function Movies() {
 
         dispatch(updateMovies(updatedMovies));
     };
-    const pageDirection = (language === 'ar') ? 'rtl' : 'ltr';
     return (
         <>
-            <Container fluid dir={pageDirection}>
+            <Container fluid>
                 <Row md={3} className='mb-5'>
                     {moviesArr.map((movie) => (
                         <Col key={movie.id} className='d-flex justify-content-center mb-5'>
-                            <Card style={{ color: 'white', backgroundColor: '#141414df' }} className=''>
+                            <Card style={{ color: 'white', backgroundColor: '#141414df' }}>
                                 <Card.Img className='w-100' variant="top" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
                                 <Card.Body className='p-0'>
                                     <Card.Title>{movie.title}</Card.Title>

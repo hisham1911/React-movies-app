@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
+import { isLoginContext } from '../../contexts/isLogin';
 
 function LogIn() {
   const navigate = useNavigate();
+  const { isLogin, setIsLogin } = useContext(isLoginContext);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -17,13 +19,19 @@ function LogIn() {
   };
 
   const handleLogIn = () => {
-    localStorage.setItem('Credentials', JSON.stringify({ email, password }));
-    navigate('/');
+    // Check your credentials logic here
+    if (email && password) {
+      setIsLogin(true);
+      navigate('/');
+    } else {
+      alert('Please register first');
+    }
   };
+
 
   return (
     <div className='d-flex justify-content-center align-items-center' style={{ height: '78.8vh', width: '100vw' }}>
-      <Form className='text-white'>
+      <Form className='text-white' autoComplete='off'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" value={email} onChange={handleEmailChange} />

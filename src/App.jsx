@@ -14,6 +14,7 @@ import store from './store/store';
 import Favorites from './pages/favorites/Favorites';
 import { LanguageProvider } from './contexts/language';
 import { useState } from 'react';
+import { IsLoginProvider } from './contexts/isLogin.js';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -33,13 +34,17 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [language,setLanguage]= useState('en')
+  const [language, setLanguage] = useState('en');
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
-    <LanguageProvider value={{language,setLanguage}}>
-      <Provider store={store}>
-        <RouterProvider router={router} />
-      </Provider> 
-    </LanguageProvider>
+    <IsLoginProvider value={{ isLogin, setIsLogin }}>
+      <LanguageProvider value={{ language, setLanguage }}>
+        <Provider store={store}>
+          <RouterProvider router={router} />
+        </Provider>
+      </LanguageProvider>
+    </IsLoginProvider>
   );
 }
 
